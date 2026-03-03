@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Raj Marketing Mysore</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <style>
+    .service-process {
+      padding: 60px 0;
+      background: var(--light-gray);
+    }
+    
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: var(--primary-blue);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 20px;
+      border: 3px solid var(--secondary-yellow);
+    }
+    
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .service-card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(26,75,140,0.2);
+    }
+    
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(240, 178, 2, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: var(--secondary-yellow);
+    }
+    
+    .service-card h3 {
+      color: var(--primary-blue);
+      margin-bottom: 15px;
+    }
+    
+    .service-features {
+      list-style: none;
+      margin-top: 20px;
+    }
+    
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+    
+    .service-features i {
+      color: var(--secondary-yellow);
+    }
+    
+    @media (max-width: 768px) {
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">
+            Raj Marketing <span>Premium Mosquito Nets</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+          <li><a href="services.html" class="active"><i class="fas fa-tools"></i> Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Complete mosquito net solutions for homes and businesses</p>
+    </div>
+  </section>
+
+  <!-- Service Process -->
+  <section class="service-process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Work</h2>
+        <p>Simple 4-step process for hassle-free service</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Free Consultation</h3>
+          <p>Call us or visit our showroom for free consultation</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Site Measurement</h3>
+          <p>We visit your home for precise measurements</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Custom Fabrication</h3>
+          <p>Nets made to your exact specifications</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Professional Installation</h3>
+          <p>Expert installation within 24-48 hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions for all your mosquito net needs</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-window-maximize"></i>
+          </div>
+          <h3>Window Net Installation</h3>
+          <p>Custom-fit mosquito nets for all window types:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Sliding windows</li>
+            <li><i class="fas fa-check"></i> Casement windows</li>
+            <li><i class="fas fa-check"></i> French windows</li>
+            <li><i class="fas fa-check"></i> Bay windows</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-door-open"></i>
+          </div>
+          <h3>Door Net Installation</h3>
+          <p>Complete door solutions:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Magnetic door nets</li>
+            <li><i class="fas fa-check"></i> Sliding door nets</li>
+            <li><i class="fas fa-check"></i> Hinged door nets</li>
+            <li><i class="fas fa-check"></i> French door nets</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>Repair & Maintenance</h3>
+          <p>Extend the life of your nets:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Mesh replacement</li>
+            <li><i class="fas fa-check"></i> Frame repair</li>
+            <li><i class="fas fa-check"></i> Velcro replacement</li>
+            <li><i class="fas fa-check"></i> Annual maintenance</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-ruler-combined"></i>
+          </div>
+          <h3>Custom Fabrication</h3>
+          <p>Special sizes and shapes:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Arch windows</li>
+            <li><i class="fas fa-check"></i> Circular windows</li>
+            <li><i class="fas fa-check"></i> Skylights</li>
+            <li><i class="fas fa-check"></i> Custom colors</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Commercial Projects</h3>
+          <p>For offices and businesses:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Office buildings</li>
+            <li><i class="fas fa-check"></i> Hotels & restaurants</li>
+            <li><i class="fas fa-check"></i> Hospitals</li>
+            <li><i class="fas fa-check"></i> Schools & colleges</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Emergency Service</h3>
+          <p>24/7 support for urgent needs:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Same-day service</li>
+            <li><i class="fas fa-check"></i> Emergency repairs</li>
+            <li><i class="fas fa-check"></i> Quick response</li>
+            <li><i class="fas fa-check"></i> Call +91-9483037385</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="contact.html" class="btn btn-primary">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="about" style="background: var(--light-gray);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Service Areas in Mysore</h2>
+        <p>We serve all major localities across Mysore city</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Hootgalli
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Kuvempunagar
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Vijayanagar
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Gokulam
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Jayalakshmipuram
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Shivarampet
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Saraswathipuram
+        </div>
+        <div style="background: var(--white); padding: 15px; border-radius: 10px; text-align: center;">
+          <i class="fas fa-map-marker-alt" style="color: var(--secondary-yellow);"></i> Hebbal
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Raj Marketing</span>
+          </div>
+          <p>Your trusted partner for premium mosquito nets in Mysore since 2001.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="velcro-system.html">Velcro System</a></li>
+            <li><a href="frame-system.html">Frame System</a></li>
+            <li><a href="pleated-nets.html">Pleated Nets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> #65, Near Pragathi logistics, Hootgalli industrial area, Mysore</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919483037385">+91-9483037385</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Raj Marketing. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      const menu = document.querySelector('.nav-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
