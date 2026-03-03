@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raj Marketing Mysore - Premium Mosquito Nets</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    /* Additional page-specific styles */
+    .company-highlight {
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+      padding: 60px 0;
+      color: var(--white);
+    }
+    
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+    
+    .highlight-item {
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .highlight-item i {
+      font-size: 2.5rem;
+      color: var(--secondary-yellow);
+      margin-bottom: 15px;
+    }
+    
+    .highlight-item h3 {
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    
+    .highlight-item p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    @media (max-width: 768px) {
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Page -->
+  <div class="loading-page" id="loadingPage">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h1 class="loader-title">Raj Marketing</h1>
+      <p class="loader-subtitle">Premium Mosquito Nets · Mysore</p>
+      <div class="loader-progress-container">
+        <div class="loader-progress-bar" id="loaderProgress"></div>
+      </div>
+      <div class="loader-percentage" id="loaderPercentage">0%</div>
+      <div class="loader-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">
+            Raj Marketing <span>Premium Mosquito Nets</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="pages/products.html"><i class="fas fa-box"></i> Products</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-tools"></i> Services</a></li>
+          <li><a href="pages/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="pages/contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-pattern"></div>
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">
+          <i class="fas fa-check-circle"></i> Trusted Since 2001
+        </div>
+        <h1 class="hero-title">
+          Premium Mosquito Nets <span>For Your Home</span>
+        </h1>
+        <p class="hero-text">
+          Protect your family from mosquitoes with our high-quality, custom-fit mosquito nets. 
+          Professional installation with 5-year warranty.
+        </p>
+        <div class="hero-buttons">
+          <a href="pages/products.html" class="btn btn-primary">
+            <i class="fas fa-eye"></i> View Products
+          </a>
+          <a href="pages/contact.html" class="btn btn-outline">
+            <i class="fas fa-calendar-alt"></i> Free Consultation
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">5000+</span>
+            <span class="stat-label">Happy Families</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">23</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Product Types</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1585771724684-3d2242f0a9a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mosquito Net">
+        <div class="floating-card card-1">
+          <i class="fas fa-shield-alt"></i>
+          <span>100% Protection</span>
+        </div>
+        <div class="floating-card card-2">
+          <i class="fas fa-wind"></i>
+          <span>Fresh Air Flow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Info Bar -->
+  <div class="company-bar">
+    <div class="container">
+      <div class="company-info-grid">
+        <div class="info-item">
+          <i class="fas fa-user"></i>
+          <span>Owner: Madhu</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-user-tie"></i>
+          <span>Manager: Govind Raju</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+919483037385">+91-9483037385</a>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-globe"></i>
+          <a href="https://www.rajmarketingmysore.com" target="_blank">www.rajmarketingmysore.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Our Premium Products</h2>
+        <p>Choose from our wide range of mosquito nets with various frame and mesh options</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Velcro System -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-badge">Budget Friendly</div>
+          <div class="product-image">
+            <i class="fas fa-tape"></i>
+          </div>
+          <div class="product-content">
+            <h3>Velcro System</h3>
+            <p class="product-desc">Easy to install and remove. Perfect for rented homes or temporary fixes.</p>
+            <div class="product-price">₹60 <small>/sq ft</small></div>
+            <ul class="product-features">
+              <li><i class="fas fa-check"></i> No frame required</li>
+              <li><i class="fas fa-check"></i> Easy installation</li>
+              <li><i class="fas fa-check"></i> Removable & reusable</li>
+            </ul>
+            <a href="pages/velcro-system.html" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Frame System -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-badge">Most Popular</div>
+          <div class="product-image">
+            <i class="fas fa-border-all"></i>
+          </div>
+          <div class="product-content">
+            <h3>Frame System</h3>
+            <p class="product-desc">Premium aluminum frames with various color and mesh options.</p>
+            <div class="product-price">₹160 <small>/sq ft onwards</small></div>
+            <ul class="product-features">
+              <li><i class="fas fa-check"></i> Multiple frame colors</li>
+              <li><i class="fas fa-check"></i> SS mesh options</li>
+              <li><i class="fas fa-check"></i> Woodgrain finish</li>
+            </ul>
+            <a href="pages/frame-system.html" class="product-link">View Options <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Pleated Nets -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-badge">Premium</div>
+          <div class="product-image">
+            <i class="fas fa-accordion"></i>
+          </div>
+          <div class="product-content">
+            <h3>Pleated Nets</h3>
+            <p class="product-desc">Elegant pleated design that folds neatly when not in use.</p>
+            <div class="product-price">₹350 <small>/sq ft onwards</small></div>
+            <ul class="product-features">
+              <li><i class="fas fa-check"></i> Space-saving design</li>
+              <li><i class="fas fa-check"></i> Multiple colors</li>
+              <li><i class="fas fa-check"></i> Woodgrain option</li>
+            </ul>
+            <a href="pages/pleated-nets.html" class="product-link">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="pages/products.html" class="btn btn-primary">View All Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Highlights -->
+  <section class="company-highlight">
+    <div class="container">
+      <div class="highlight-grid">
+        <div class="highlight-item" data-aos="fade-up">
+          <i class="fas fa-factory"></i>
+          <h3>Factory Address</h3>
+          <p>#65, Near Pragathi logistics<br>Hootgalli industrial area<br>Hootgalli, Mysore</p>
+        </div>
+        <div class="highlight-item" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-phone-volume"></i>
+          <h3>Single Contact</h3>
+          <p>📞 +91-9483037385<br>📧 rajmarketingmys@gmail.com<br>🌐 www.rajmarketingmysore.com</p>
+        </div>
+        <div class="highlight-item" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-users"></i>
+          <h3>Our Team</h3>
+          <p>Owner: Madhu (Female)<br>Manager: Govind Raju<br>10+ Skilled Workers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="about" style="background: var(--light-gray);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Our Showroom">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h2>Why Choose Raj Marketing?</h2>
+          <p>With over 23 years of experience in Mysore, we have become the most trusted name for mosquito nets. Our commitment to quality and customer satisfaction sets us apart.</p>
+          
+          <div class="owner-info">
+            <h3><i class="fas fa-medal"></i> Our Promise</h3>
+            <p><i class="fas fa-check-circle"></i> Premium quality materials</p>
+            <p><i class="fas fa-check-circle"></i> Professional installation team</p>
+            <p><i class="fas fa-check-circle"></i> 5-year warranty on all products</p>
+            <p><i class="fas fa-check-circle"></i> Free consultation & measurement</p>
+            <p><i class="fas fa-check-circle"></i> Competitive pricing</p>
+          </div>
+          
+          <a href="pages/about.html" class="btn btn-primary">Read More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Raj Marketing</span>
+          </div>
+          <p>Your trusted partner for premium mosquito nets in Mysore since 2001. Quality products, professional installation, and unmatched customer service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="pages/velcro-system.html">Velcro System</a></li>
+            <li><a href="pages/frame-system.html">Frame System</a></li>
+            <li><a href="pages/pleated-nets.html">Pleated Nets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> #65, Near Pragathi logistics, Hootgalli industrial area, Hootgalli, Mysore</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919483037385">+91-9483037385</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a></p>
+          <p><i class="fas fa-globe"></i> <a href="https://www.rajmarketingmysore.com">www.rajmarketingmysore.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Raj Marketing. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ff4757;"></i> in Mysore</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Loading page animation
+    const loader = document.getElementById('loadingPage');
+    const progressBar = document.getElementById('loaderProgress');
+    const percentageText = document.getElementById('loaderPercentage');
+    
+    let width = 0;
+    const interval = setInterval(() => {
+      width += 1;
+      progressBar.style.width = width + '%';
+      percentageText.textContent = width + '%';
+      
+      if (width >= 100) {
+        clearInterval(interval);
+        setTimeout(() => {
+          loader.classList.add('hidden');
+        }, 500);
+      }
+    }, 20);
+
+    // Mobile menu toggle
+    document.getElementById('navToggle').addEventListener('click', function() {
+      const menu = document.querySelector('.nav-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+  </html>
