@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Raj Marketing Mysore</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <style>
+    .about-story {
+      padding: 60px 0;
+    }
+    
+    .team-section {
+      background: var(--light-gray);
+      padding: 60px 0;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .team-card {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .team-image {
+      height: 250px;
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .team-image i {
+      font-size: 5rem;
+      color: var(--secondary-yellow);
+    }
+    
+    .team-info {
+      padding: 25px;
+    }
+    
+    .team-info h3 {
+      color: var(--primary-blue);
+      margin-bottom: 5px;
+    }
+    
+    .team-info .position {
+      color: var(--secondary-yellow);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .team-info p {
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+    
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .achievement-card {
+      text-align: center;
+    }
+    
+    .achievement-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--secondary-yellow);
+    }
+    
+    .achievement-label {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">
+            Raj Marketing <span>Premium Mosquito Nets</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+          <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>About Raj Marketing</h1>
+      <p>Your trusted partner for premium mosquito nets in Mysore since 2001</p>
+    </div>
+  </section>
+
+  <section class="about-story">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Our Showroom">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h2>Our Story</h2>
+          <p>Established in 2001, Raj Marketing has been serving the people of Mysore with premium quality mosquito nets for over two decades. What started as a small workshop has now grown into one of Mysore's most trusted names for home protection solutions.</p>
+          
+          <p>Our founder, <strong>Madhu</strong>, started this journey with a simple mission: to provide every home in Mysore with affordable, durable, and effective mosquito protection. Today, under the management of <strong>Govind Raju</strong>, we have successfully installed mosquito nets in over 5,000 homes across Mysore city.</p>
+
+          <div class="owner-info">
+            <h3><i class="fas fa-users"></i> Meet Our Team</h3>
+            <p><i class="fas fa-user"></i> <strong>Owner:</strong> Madhu (Female) - 23+ years experience</p>
+            <p><i class="fas fa-user-tie"></i> <strong>Manager:</strong> Govind Raju - 15+ years experience</p>
+            <p><i class="fas fa-tools"></i> <strong>Installation Team:</strong> 10+ skilled workers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="achievement-grid">
+        <div class="achievement-card">
+          <div class="achievement-number">23+</div>
+          <div class="achievement-label">Years of Excellence</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">5000+</div>
+          <div class="achievement-label">Happy Families</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">15+</div>
+          <div class="achievement-label">Product Varieties</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">100%</div>
+          <div class="achievement-label">Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Leadership Team</h2>
+        <p>Dedicated professionals ensuring your satisfaction</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-image">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="team-info">
+            <h3>Madhu</h3>
+            <div class="position">Founder & Owner</div>
+            <p>With over 23 years of experience in the mosquito net industry, Madhu founded Raj Marketing in 2001 with a vision to provide affordable home protection solutions to the people of Mysore.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-image">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="team-info">
+            <h3>Govind Raju</h3>
+            <div class="position">Manager</div>
+            <p>Govind Raju brings 15+ years of operational expertise, ensuring every installation meets our quality standards and customer expectations.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-image">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="team-info">
+            <h3>Installation Team</h3>
+            <div class="position">10+ Skilled Workers</div>
+            <p>Our experienced installation team ensures perfect fit and finish for every window and door, with minimum disturbance to your home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="about" style="padding: 60px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Us?</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        <div class="feature-card" style="text-align: center;">
+          <i class="fas fa-medal" style="font-size: 3rem; color: var(--secondary-yellow); margin-bottom: 15px;"></i>
+          <h3>Quality Products</h3>
+          <p>Premium aluminum frames and SS mesh with 5-year warranty</p>
+        </div>
+        <div class="feature-card" style="text-align: center;">
+          <i class="fas fa-tools" style="font-size: 3rem; color: var(--secondary-yellow); margin-bottom: 15px;"></i>
+          <h3>Expert Installation</h3>
+          <p>Professional team with 15+ years of experience</p>
+        </div>
+        <div class="feature-card" style="text-align: center;">
+          <i class="fas fa-tag" style="font-size: 3rem; color: var(--secondary-yellow); margin-bottom: 15px;"></i>
+          <h3>Best Prices</h3>
+          <p>Direct from manufacturer, no middlemen</p>
+        </div>
+        <div class="feature-card" style="text-align: center;">
+          <i class="fas fa-headset" style="font-size: 3rem; color: var(--secondary-yellow); margin-bottom: 15px;"></i>
+          <h3>Customer Support</h3>
+          <p>24/7 support at +91-9483037385</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Raj Marketing</span>
+          </div>
+          <p>Your trusted partner for premium mosquito nets in Mysore since 2001.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="velcro-system.html">Velcro System</a></li>
+            <li><a href="frame-system.html">Frame System</a></li>
+            <li><a href="pleated-nets.html">Pleated Nets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> #65, Near Pragathi logistics, Hootgalli industrial area, Mysore</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919483037385">+91-9483037385</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Raj Marketing. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+    
+    document.getElementById('navToggle').addEventListener('click', function() {
+      const menu = document.querySelector('.nav-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+                                                                            </html>
