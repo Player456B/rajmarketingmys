@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Raj Marketing Mysore</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <style>
+    .page-header {
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+      color: var(--white);
+      padding: 120px 0 60px;
+      text-align: center;
+    }
+    
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+    
+    .page-header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .color-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    
+    .color-chip {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--border-color);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .color-chip:hover {
+      transform: scale(1.1);
+      border-color: var(--secondary-yellow);
+    }
+    
+    .color-chip.selected {
+      border-color: var(--secondary-yellow);
+      box-shadow: 0 0 0 2px var(--secondary-yellow);
+    }
+    
+    .color-chip.ivory { background: #f5e6d3; }
+    .color-chip.honey-gold { background: #d4a017; }
+    .color-chip.brown { background: #8b4513; }
+    .color-chip.black { background: #000000; }
+    .color-chip.white { background: #ffffff; border: 2px solid #ddd; }
+    .color-chip.woodgrain { background: #8b5a2b; }
+    
+    .mesh-option {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--light-gray);
+      border: 2px solid var(--border-color);
+      border-radius: 30px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .mesh-option:hover {
+      border-color: var(--secondary-yellow);
+    }
+    
+    .mesh-option.selected {
+      background: var(--primary-blue);
+      color: var(--white);
+      border-color: var(--primary-blue);
+    }
+    
+    .price-calculator {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 40px;
+    }
+    
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .calc-input {
+      padding: 15px;
+      border: 2px solid var(--border-color);
+      border-radius: 10px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    
+    .total-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (same as index) -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">
+            Raj Marketing <span>Premium Mosquito Nets</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="products.html" class="active"><i class="fas fa-box"></i> Products</a></li>
+          <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Premium Products</h1>
+      <p>Choose from our wide range of mosquito nets with various frame colors and mesh options</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="container">
+      <!-- Velcro System -->
+      <div class="product-card" style="margin-bottom: 30px;">
+        <div class="product-content">
+          <h2 style="color: var(--primary-blue);">1. Velcro System</h2>
+          <p>Easy to install and remove. Perfect for rented homes or temporary fixes. No frame required.</p>
+          <div class="product-price">₹60 / sq ft</div>
+          <ul class="product-features">
+            <li><i class="fas fa-check"></i> Easy installation with strong adhesive velcro</li>
+            <li><i class="fas fa-check"></i> Removable and reusable</li>
+            <li><i class="fas fa-check"></i> No drilling or frame required</li>
+            <li><i class="fas fa-check"></i> Ideal for windows and doors</li>
+          </ul>
+          <a href="velcro-system.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Frame System -->
+      <div class="product-card" style="margin-bottom: 30px;">
+        <div class="product-content">
+          <h2 style="color: var(--primary-blue);">2. Frame System</h2>
+          <p>Premium aluminum frames with multiple color and mesh options for a perfect finish.</p>
+          
+          <h3 style="margin: 20px 0 10px;">Option A: Regular Aluminum Frame</h3>
+          <div style="margin-bottom: 20px;">
+            <p><strong>Colors:</strong> Ivory, Honey Gold, Brown, Black, White</p>
+            <div class="color-options">
+              <div class="color-chip ivory" title="Ivory"></div>
+              <div class="color-chip honey-gold" title="Honey Gold"></div>
+              <div class="color-chip brown" title="Brown"></div>
+              <div class="color-chip black" title="Black"></div>
+              <div class="color-chip white" title="White"></div>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 20px;">
+            <p><strong>with SS Mesh Black Coated</strong> - ₹160/sq ft</p>
+            <p><strong>with SS Mesh White</strong> - ₹180/sq ft</p>
+          </div>
+
+          <h3 style="margin: 20px 0 10px;">Option B: Woodgrain Aluminum Frame</h3>
+          <div style="margin-bottom: 20px;">
+            <div class="color-options">
+              <div class="color-chip woodgrain" title="Woodgrain"></div>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 20px;">
+            <p><strong>with SS Black Mesh</strong> - ₹250/sq ft</p>
+            <p><strong>with White SS Mesh</strong> - ₹280/sq ft</p>
+          </div>
+
+          <ul class="product-features">
+            <li><i class="fas fa-check"></i> Rust-free aluminum frames</li>
+            <li><i class="fas fa-check"></i> Powder-coated finish</li>
+            <li><i class="fas fa-check"></i> Strong stainless steel mesh</li>
+            <li><i class="fas fa-check"></i> 5-year warranty</li>
+          </ul>
+          
+          <a href="frame-system.html" class="btn btn-primary">View All Options</a>
+        </div>
+      </div>
+
+      <!-- Pleated Nets -->
+      <div class="product-card" style="margin-bottom: 30px;">
+        <div class="product-content">
+          <h2 style="color: var(--primary-blue);">3. Pleated Nets</h2>
+          <p>Elegant pleated design that folds neatly when not in use. Perfect for large openings.</p>
+          
+          <h3 style="margin: 20px 0 10px;">Option A: Regular Aluminum Frame</h3>
+          <div style="margin-bottom: 20px;">
+            <p><strong>Colors:</strong> Ivory, Honey Gold, Brown, Black, White</p>
+            <div class="color-options">
+              <div class="color-chip ivory" title="Ivory"></div>
+              <div class="color-chip honey-gold" title="Honey Gold"></div>
+              <div class="color-chip brown" title="Brown"></div>
+              <div class="color-chip black" title="Black"></div>
+              <div class="color-chip white" title="White"></div>
+            </div>
+            <p><strong>with Black Fiber Net</strong> - ₹350/sq ft</p>
+          </div>
+
+          <h3 style="margin: 20px 0 10px;">Option B: Woodgrain Aluminum Frame</h3>
+          <div style="margin-bottom: 20px;">
+            <div class="color-options">
+              <div class="color-chip woodgrain" title="Woodgrain"></div>
+            </div>
+            <p><strong>with Fiber Black Coated</strong> - ₹450/sq ft</p>
+          </div>
+
+          <ul class="product-features">
+            <li><i class="fas fa-check"></i> Space-saving pleated design</li>
+            <li><i class="fas fa-check"></i> Smooth folding mechanism</li>
+            <li><i class="fas fa-check"></i> Ideal for balconies and large doors</li>
+            <li><i class="fas fa-check"></i> Premium finish</li>
+          </ul>
+          
+          <a href="pleated-nets.html" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+
+      <!-- Price Calculator -->
+      <div class="price-calculator">
+        <h3 style="color: var(--primary-blue); margin-bottom: 20px;">Quick Price Calculator</h3>
+        <div class="calculator-grid">
+          <div>
+            <label>Select Product:</label>
+            <select class="calc-input" id="productSelect">
+              <option value="60">Velcro System - ₹60/sq ft</option>
+              <option value="160">Frame System (Regular + SS Black) - ₹160/sq ft</option>
+              <option value="180">Frame System (Regular + SS White) - ₹180/sq ft</option>
+              <option value="250">Frame System (Woodgrain + SS Black) - ₹250/sq ft</option>
+              <option value="280">Frame System (Woodgrain + SS White) - ₹280/sq ft</option>
+              <option value="350">Pleated Nets (Regular + Black Fiber) - ₹350/sq ft</option>
+              <option value="450">Pleated Nets (Woodgrain + Fiber Black) - ₹450/sq ft</option>
+            </select>
+          </div>
+          <div>
+            <label>Area (sq ft):</label>
+            <input type="number" class="calc-input" id="areaInput" value="10" min="1">
+          </div>
+          <div>
+            <label>Quantity:</label>
+            <input type="number" class="calc-input" id="qtyInput" value="1" min="1">
+          </div>
+        </div>
+        <div class="total-price" id="totalPrice">
+          Total: ₹600
+        </div>
+        <button class="btn btn-primary" onclick="getQuote()">Get Quote</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Raj Marketing</span>
+          </div>
+          <p>Your trusted partner for premium mosquito nets in Mysore since 2001.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="velcro-system.html">Velcro System</a></li>
+            <li><a href="frame-system.html">Frame System</a></li>
+            <li><a href="pleated-nets.html">Pleated Nets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> #65, Near Pragathi logistics, Hootgalli industrial area, Mysore</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919483037385">+91-9483037385</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Raj Marketing. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Price Calculator
+    document.getElementById('productSelect').addEventListener('change', calculatePrice);
+    document.getElementById('areaInput').addEventListener('input', calculatePrice);
+    document.getElementById('qtyInput').addEventListener('input', calculatePrice);
+
+    function calculatePrice() {
+      const pricePerSqFt = parseFloat(document.getElementById('productSelect').value);
+      const area = parseFloat(document.getElementById('areaInput').value) || 0;
+      const qty = parseFloat(document.getElementById('qtyInput').value) || 1;
+      const total = pricePerSqFt * area * qty;
+      document.getElementById('totalPrice').textContent = `Total: ₹${total.toFixed(2)}`;
+    }
+
+    function getQuote() {
+      const product = document.getElementById('productSelect').selectedOptions[0].text;
+      const area = document.getElementById('areaInput').value;
+      const qty = document.getElementById('qtyInput').value;
+      const total = document.getElementById('totalPrice').textContent;
+      
+      alert(`Quote Request Sent!\n\nProduct: ${product}\nArea: ${area} sq ft\nQuantity: ${qty}\n${total}\n\nWe will contact you shortly at ${'9483037385'}`);
+    }
+
+    // Mobile menu toggle
+    document.getElementById('navToggle').addEventListener('click', function() {
+      const menu = document.querySelector('.nav-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
