@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velcro System - Raj Marketing Mysore | Easy Install Mosquito Nets</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Same styles as frame-system.html with adjustments */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1a4b8c;
+      --primary-dark: #0f3a6b;
+      --secondary-yellow: #f0b202;
+      --white: #ffffff;
+      --dark: #1e2b3a;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header styles same as previous */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(26, 75, 140, 0.1);
+      z-index: 1000;
+      border-bottom: 3px solid var(--secondary-yellow);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary-blue);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary-yellow);
+      font-size: 1.8rem;
+      transform: rotate(45deg);
+    }
+
+    .logo-icon i {
+      transform: rotate(-45deg);
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      color: var(--secondary-yellow);
+      font-size: 0.9rem;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 20px;
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      background: var(--primary-blue);
+      color: var(--white);
+    }
+
+    .nav-menu a i {
+      color: var(--secondary-yellow);
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: var(--primary-blue);
+      cursor: pointer;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+      color: var(--white);
+      padding: 140px 0 80px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .product-detail {
+      background: var(--white);
+      border-radius: 30px;
+      padding: 40px;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .price-box {
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+      color: var(--white);
+      padding: 30px;
+      border-radius: 20px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .price-tag {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--secondary-yellow);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .feature-item {
+      text-align: center;
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 20px;
+    }
+
+    .feature-item i {
+      font-size: 2.5rem;
+      color: var(--secondary-yellow);
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: var(--secondary-yellow);
+      color: var(--dark);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: var(--white);
+    }
+
+    .footer {
+      background: var(--primary-dark);
+      color: var(--white);
+      padding: 60px 0 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">
+            Raj Marketing <span>Premium Mosquito Nets</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="products.html" class="active"><i class="fas fa-box"></i> Products</a></li>
+          <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Velcro System</h1>
+      <p>Easy DIY installation - Perfect for rented homes</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="product-detail">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <i class="fas fa-tape" style="font-size: 5rem; color: var(--secondary-yellow);"></i>
+      </div>
+
+      <div class="price-box">
+        <h3>Special Price</h3>
+        <div class="price-tag">₹60</div>
+        <p>per square foot</p>
+        <p style="margin-top: 15px;">Professional installation: + ₹15/sq ft extra</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <i class="fas fa-bolt"></i>
+          <h3>Easy Installation</h3>
+          <p>No drilling, no frames - just stick and use</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-undo-alt"></i>
+          <h3>Removable</h3>
+          <p>Can be removed and reused anytime</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-home"></i>
+          <h3>Perfect for Rentals</h3>
+          <p>Ideal for rented apartments - no damage to walls</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-scissors"></i>
+          <h3>Customizable</h3>
+          <p>Can be cut to any size easily</p>
+        </div>
+      </div>
+
+      <h3 style="color: var(--primary-blue); margin: 30px 0 20px;">Product Specifications</h3>
+      <ul style="list-style: none;">
+        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--secondary-yellow); margin-right: 10px;"></i> High-quality fiberglass mesh</li>
+        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--secondary-yellow); margin-right: 10px;"></i> Strong industrial-grade velcro</li>
+        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--secondary-yellow); margin-right: 10px;"></i> UV resistant - won't fade in sun</li>
+        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--secondary-yellow); margin-right: 10px;"></i> Easy to clean with damp cloth</li>
+        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--secondary-yellow); margin-right: 10px;"></i> 1 year warranty</li>
+      </ul>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <button class="btn btn-primary" onclick="window.location.href='contact.html'">Get Free Quote</button>
+        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/919483037385','_blank')" style="margin-left: 15px;">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Raj Marketing</span>
+          </div>
+          <p>Your trusted partner for premium mosquito nets in Mysore since 2001.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="velcro-system.html">Velcro System</a></li>
+            <li><a href="frame-system.html">Frame System</a></li>
+            <li><a href="pleated-nets.html">Pleated Nets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> #65, Near Pragathi logistics, Hootgalli industrial area, Mysore</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+919483037385">+91-9483037385</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rajmarketingmys@gmail.com">rajmarketingmys@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Raj Marketing. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      const menu = document.querySelector('.nav-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+    </html>
